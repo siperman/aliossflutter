@@ -178,7 +178,7 @@ StreamController<ListObjectsResponse> _responseListObjectsController =
       "endpoint": endpoint,
       "accessKeyId": accessKeyId,
       "accessKeySecret": accessKeySecret,
-      "securityToken": securityToken
+      "stsToken": securityToken
     });
   }
 
