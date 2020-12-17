@@ -173,11 +173,12 @@ StreamController<ListObjectsResponse> _responseListObjectsController =
     });
   }
 
-  Future secretInit(String accessKeyId,String accessKeySecret, String endpoint) async {
+  Future secretInit(String accessKeyId,String accessKeySecret, String securityToken, String endpoint) async {
     return await _invokeMethod('secretInit', <String, String>{
       "endpoint": endpoint,
       "accessKeyId": accessKeyId,
-      "accessKeySecret": accessKeySecret
+      "accessKeySecret": accessKeySecret,
+      "securityToken": securityToken
     });
   }
 
